@@ -1,0 +1,16 @@
+.deck{
+    display: grid;
+    margin-top: 10px;
+    grid-template-columns: repeat(13, 1fr);
+    row-gap: 1px;
+    column-gap: 3px;
+}
+
+.card{
+    text-align: center;
+    height: 75px;
+    border:1px solid #151718;
+    margin-bottom:5px;
+    border-radius:2px;
+    cursor:pointer;
+}
