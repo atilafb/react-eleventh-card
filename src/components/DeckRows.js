@@ -1,13 +1,15 @@
-import { DeckCard } from "./DeckCard"
+import DeckCard from "./DeckCard"
 
-export const DeckRows = ({ slicedDeck }) => {
+const DeckRows = ({ cards }) => {
   return (
-    <div className="deck">
+    <div className="deck-row">
       {
-        slicedDeck.map((item) => {
-          return <DeckCard key={item.suit + item.value} suit={item.suit} value={item.value} />
+        cards.map((item) => {
+          return <DeckCard key={item.suit + item.value} {...item} />
         })
       }
     </div>
   )
 }
+
+export default DeckRows;
