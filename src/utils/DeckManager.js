@@ -12,3 +12,11 @@ export function shuffle(deck){
 export function dealCards(deck, upper){
     return [...deck].slice(0, upper)
 }
+
+export function rowsOfDeck(deck){
+    const rowOne = deck.slice(0, 7)
+    const rowTwo = deck.slice(7, 14)
+    const rowThree = deck.slice(14, 21)
+
+    return [rowOne, rowTwo, rowThree]
+}
