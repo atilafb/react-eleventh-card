@@ -1,7 +1,7 @@
 .deck{
     display: grid;
     margin-top: 10px;
-    grid-template-columns: repeat(13, 1fr);
+    grid-template-columns: repeat(14, 1fr);
     row-gap: 1px;
     column-gap: 3px;
 }
